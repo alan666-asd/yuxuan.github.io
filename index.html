@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>我的个人主页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSI205TC Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World! 我的网站上线了！</h1>
-    <p>这是一个测试页面。</p>
+    <div class="container">
+        <h1>Hello, I'm [Your Name]</h1>
+        <p>Student ID: [Your ID]</p>
+        <p>Programme: BSc Data Science, XJTLU</p>
+        <h2>About Me</h2>
+        <p>This is a simple static webpage for CSI205TC Networking and Distributed Computing Question 2.</p>
+        <h2>Course Projects</h2>
+        <ul>
+            <li>Q1: TCP & UDP Video Stream Transmission with Python Socket</li>
+            <li>Q3: Native Python MapReduce Word Count</li>
+            <li>Q4: Hadoop MapReduce & Spark Word Count</li>
+        </ul>
+        <button onclick="showTime()">Click to get current time</button>
+        <p id="time-display"></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
