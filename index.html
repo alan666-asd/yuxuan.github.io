@@ -1,28 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CSI205TC Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuxuan Cai — Personal Website</title>
+  <meta name="description" content="Personal academic website of Yuxuan Cai." />
+  <meta property="og:title" content="Yuxuan Cai — Personal Website" />
+  <meta property="og:description" content="Personal academic website." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" />
 </head>
 <body>
-    <div class="container">
-        <h1>Hello, I'm [Your Name]</h1>
-        <p>Student ID: [Your ID]</p>
-        <p>Programme: BSc Data Science, XJTLU</p>
-        <h2>About Me</h2>
-        <p>This is a simple static webpage for CSI205TC Networking and Distributed Computing Question 2.</p>
-        <h2>Course Projects</h2>
-        <ul>
-            <li>Q1: TCP & UDP Video Stream Transmission with Python Socket</li>
-            <li>Q3: Native Python MapReduce Word Count</li>
-            <li>Q4: Hadoop MapReduce & Spark Word Count</li>
-        </ul>
-        <button onclick="showTime()">Click to get current time</button>
-        <p id="time-display"></p>
+
+<!-- ================= NAV ================= -->
+<header class="site-header">
+  <nav class="nav container">
+    <a href="#hero" class="nav-logo">Yuxuan&nbsp;Cai</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section id="hero" class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="hero-kicker">Undergraduate</p>
+      <h1>Yuxuan Cai</h1>
+      <p class="hero-affil">
+        School of AI and Advanced Computing,<br />
+        XJTLU Entrepreneur College (Taicang),<br />
+        Xi'an Jiaotong-Liverpool University
+      </p>
+      <ul class="hero-links">
+        <li><a href="mailto:yuxuan.cai24@student.xjtlu.edu.cn">Email</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="#" target="_blank" rel="noopener">ORCID</a></li>
+        <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
     </div>
-    <script src="script.js"></script>
+    <div class="hero-photo">
+      <img src="assets/photo.png" alt="Yuxuan Cai" onerror="this.style.display='none'" />
+    </div>
+  </div>
+
+  <!-- 数字可自行修改：data-count 为动画目标值 -->
+  <div class="container stat-strip">
+    <div class="stat"><span class="stat-num" data-count="3">3</span><span class="stat-label">Projects</span></div>
+    <div class="stat"><span class="stat-num" data-count="5">5</span><span class="stat-label">Repositories</span></div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About</h2>
+    <div class="prose">
+      <p>
+        Yuxuan Cai is a third‑class honours bachelor student majoring in Data Science and Big Data
+        Technology at Xi’an‑Liverpool University. Proficient in Python, SQL and mainstream
+        machine‑learning frameworks including Scikit‑learn, XGBoost, LightGBM and LangGraph, with
+        hands‑on experience in full‑stack analytics platform development, RAG‑based AI agent
+        construction and competitive data‑mining modeling.
+      </p>
+      <p>
+        He has delivered end‑to‑end projects covering asynchronous task scheduling, vector knowledge
+        base, time‑series predictive modeling and spatial‑geographic data analysis, with solid
+        capability to avoid data leakage and build reproducible evaluation workflows. Holding an
+        IELTS 6.5 score, he is capable of reading English technical documentation and eager to pursue
+        data‑science‑related internship opportunities.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section id="research" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Research Interests</h2>
+    <!-- 每个 .card 是一张卡片，复制/删减即可 -->
+    <div class="card-grid">
+      <div class="card">
+        <h3>Data Science &amp; Operations Analytics</h3>
+        <p>End-to-end predictive modeling, time-series forecasting, feature engineering, and constrained optimization for supply chain and business decision systems.</p>
+      </div>
+      <div class="card">
+        <h3>Retrieval-Augmented LLM &amp; AI Agents</h3>
+        <p>RAG pipeline construction, knowledge base orchestration, multi-turn agent workflow, rule-engine integrated business document matching and intelligent verification.</p>
+      </div>
+      <div class="card">
+        <h3>Spatial &amp; Geospatial Data Mining</h3>
+        <p>Geographic path planning, visibility analysis, terrain constrained routing, spatial feature extraction and lightweight geospatial modelling.</p>
+      </div>
+      <div class="card">
+        <h3>Computer Vision &amp; Lightweight Deep Learning</h3>
+        <p>Small-scale vision model training, image semantic segmentation, object detection, and model compression for edge deployment scenarios.</p>
+      </div>
+      <div class="card">
+        <h3>Business Data Intelligence</h3>
+        <p>BI dashboard development, asynchronous data pipeline, ETL workflow design, and reproducible evaluation frameworks to mitigate data leakage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="table-wrap">
+      <table class="grants-table">
+        <thead>
+          <tr><th>Period</th><th>Project</th><th>Role</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026.06‑2026.07</td>
+            <td>Development of BI Intelligent Data Analysis Platform</td>
+            <td>Individual Developer</td>
+          </tr>
+          <tr>
+            <td>2026.05‑2026.06</td>
+            <td>Intelligent Content Risk‑Compliance Agent Construction</td>
+            <td>Individual Developer</td>
+          </tr>
+          <tr>
+            <td>2026.04‑2026.05</td>
+            <td>Teddy Cup Data Mining Challenge: Ancient Route Reconstruction &amp; Site Selection Modelling</td>
+            <td>Team Member</td>
+          </tr>
+          <tr>
+            <td>2026.02‑2026.04</td>
+            <td>Kaggle March Machine Learning Mania Basketball Match Prediction</td>
+            <td>Project Lead</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Education &amp; Experience</h2>
+
+    <h3 class="sub-title">Education</h3>
+    <ul class="module-list">
+      <li><strong>BEng Data Science and Big Data Technology</strong> — Xi’an Jiaotong-Liverpool University, 2023–2027</li>
+    </ul>
+
+    <h3 class="sub-title">Experience</h3>
+    <ul class="award-list">
+      <li><strong>Research Assistant, XJTLU Metaverse Research Lab</strong> — 2025–Present. Support research on geospatial data mining, lightweight vision models and AI agent pipeline prototyping.</li>
+      <li><strong>Project Lead, Teddy Cup Data Mining Competition</strong> — 2026. Develop terrain-constrained path planning and site-selection optimization models for historical geographic analysis.</li>
+      <li><strong>Individual Developer, Independent AI Project</strong> — 2026. Build RAG-based intelligent verification agent and asynchronous BI data analysis platform for business document matching.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section section-dark">
+  <div class="container">
+    <h2 class="section-title section-title-light">Contact</h2>
+    <div class="contact-grid">
+      <div>
+        <p><strong>Yuxuan Cai</strong><br />
+        Undergraduate, School of AI and Advanced Computing<br />
+        XJTLU Entrepreneur College (Taicang)</p>
+        <p>[Room / Building]<br />
+        Xi'an Jiaotong-Liverpool University<br />
+        Suzhou, Jiangsu 215000, China</p>
+      </div>
+      <div>
+        <p><strong>Email:</strong> <a href="mailto:yuxuan.cai24@student.xjtlu.edu.cn">yuxuan.cai24@student.xjtlu.edu.cn</a><br />
+        <strong>Phone:</strong> +86 159 6260 9851</p>
+        <p>
+          <a href="#" target="_blank" rel="noopener">Google Scholar</a> ·
+          <a href="#" target="_blank" rel="noopener">ORCID</a> ·
+          <a href="#" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Yuxuan Cai. Built with GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
+
 
